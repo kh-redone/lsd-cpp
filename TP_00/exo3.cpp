@@ -75,14 +75,17 @@ int main()
 {
 
   stack test=NULL;
-  push(1 , &test);
-  push(2 , &test);
-  push(2 , &test);
+  push(8 , &test);
+  push(7 , &test);
+  push(6 , &test);
+  push(5 , &test);
   push(4 , &test);
-  push(6 , &test);
-  push(6 , &test);
-  print_stack(test);cout << endl; // the result :6 5 4 3 2 1
+  push(3 , &test);
+  push(3 , &test);
+  push(2 , &test);
+  push(1 , &test);
+  print_stack(test);cout << endl; // the result : 1 2 3 3 4 5 6 7 8
   stack N = unique(&test);
-  print_stack(N);cout << endl;
+  print_stack(N);cout << endl;   // teh result  : 1 2 3 4 5 6 7 8
   return 0;
 }
