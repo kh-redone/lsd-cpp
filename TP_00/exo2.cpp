@@ -95,11 +95,10 @@ int main()
   push(5 , &test);
   push(4 , &test);
   push(3 , &test);
-  push(3 , &test);
   push(2 , &test);
   push(1 , &test);
-  print_stack(test);cout << endl; // the result : 1 2 3 3 4 5 6 7 8
-  stack N = unique(&test);
-  print_stack(N);cout << endl;   // teh result  : 1 2 3 4 5 6 7 8
+  print_stack(test);cout << endl; // the result :1   2   3   4   5   6   7   8
+  stack N=reverse_k(2,&test);     // the result :2   1   4   3   6   5   8   7
+  print_stack(N);cout <<endl;
   return 0;
 }
